@@ -4,9 +4,10 @@
 <head>
   <meta charset="utf-8">
   <title>Kenneth Mwenda - Network Engineer and Android Developer</title>
-  <meta name="description" content="">
+  <meta name="description" content="Portfolio website for Kenneth Mwenda, an experienced Network Engineer and Android Developer in Nairobi, Kenya">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <!--todo: Check what the og meta tags below mean. -->
   <meta property="og:title" content="">
   <meta property="og:type" content="">
   <meta property="og:url" content="">
@@ -18,17 +19,85 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!--  get fontawesome goodness-->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
   <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
-
   <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+<!--  <p>Hello world! This is HTML5 Boilerplate.</p>-->
+<!--  <script src="js/vendor/modernizr-3.11.2.min.js"></script>-->
+<!--  <script src="js/plugins.js"></script>-->
+<!--  <script src="js/main.js"></script>-->
+
+  <!--  Create the site navigation Bar-->
+  <nav class="navbar">
+    <div class="max-width">
+      <div class="logo"> <a href="#" >Networks<span>&Apps.</span></a></div>
+      <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Me</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Skills</a></li>
+        <li><a href="#">Teams</a></li>
+        <li><a href="#">Contacts</a></li>
+      </ul>
+      <!--add menu button for collapsed navbar-->
+      <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+  <!--Create the Home section-->
+  <section class="home" id="home">
+    <div class="max-width">
+      <div class="home-content">
+        <div class="text-1">Hello, my name is </div>
+        <div class="text-2">Kenneth Mwenda </div>
+        <div class="text-3">and I am <span>a Network Engineer</span></div>
+        <a href="#">Work With Me</a>
+      </div>
+    </div>
+  </section>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium debitis dolorem ducimus earum facere maiores molestias, mollitia nemo nisi perspiciatis quas quibusdam repellendus sapiente sed sequi sint tenetur unde, vitae!
+  </p>
+
+  <!--Create the About section-->
+  <section class="about" id="about">
+    <div class="max-width">
+
+    </div>
+  </section>
+  <!--Create the Services section-->
+  <section class="services" id="services">
+    <div class="max-width">
+
+    </div>
+  </section>
+  <!--Create the Skills section-->
+  <section class="skills" id="skills">
+    <div class="max-width">
+
+    </div>
+  </section>
+  <!--Create the Teams section-->
+  <section class="teams" id="teams">
+    <div class="max-width">
+
+    </div>
+  </section>
+  <!--Create the Contacts section-->
+  <section class="contacts" id="contacts">
+    <div class="max-width">
+
+    </div>
+  </section>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
@@ -36,6 +105,7 @@
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
