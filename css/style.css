@@ -135,7 +135,7 @@ section{
   padding: 80px;
 }
 /*all sections font*/
-.about, .services, .skills{
+.about, .services, .skills, .teams{
   font-family: 'Poppins', sans-serif;
 }
 /*all sections content structure*/
@@ -221,11 +221,11 @@ section .title::after{
   color: crimson;
 }
 /*services section styling*/
-.services{
+.services, .teams{
   color: #fcfcfc;
   background: #111111;
 }
-.services .title::before{
+.services .title::before, .teams .title::before{
   background: #fcfcfc;
 }
 .services .title::after{
@@ -349,6 +349,70 @@ section .title::after{
 }
 .skills-content .right .comms::before{
   width: 95%;
+}
+/*teams section styling*/
+.teams .title::before {
+  width: 180px;
+}
+.teams .title::after{
+  background: #111111;
+  content: "talented people";
+}
+.teams .carousel .card{
+  background: #222222;
+  border-radius: 6px;
+  padding: 25px 35px;
+  text-align: center;
+  transition: all 0.3s, ease;
+}
+.teams .carousel .card:hover{
+  background: crimson;
+}
+.teams .carousel .card .box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s, ease;
+}
+.teams .carousel .card:hover .box{
+  transform: scale(1.15);
+}
+.teams .carousel .card .text{
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
+}
+.teams .carousel .card img{
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid crimson;
+  transition: all 0.3s, ease;
+}
+.teams .carousel .card:hover img{
+  border-color: #fcfcfc;
+}
+.owl-dots{
+  text-align: center;
+  margin-top: 20px;
+}
+.owl-dot{
+  height: 13px;
+  width: 13px;
+  margin: 0 5px;
+  outline: none!important;
+  border-radius: 50%;
+  border: 2px solid crimson!important;
+  transition: all 0.3s ease;
+}
+.owl-dot.active{
+  width: 35px;
+  border-radius: 14px;
+}
+.owl-dot.active, .owl-dot:hover{
+  background: crimson!important;
 }
 /*responsive media queries*/
 @media (max-width: 1300px){
