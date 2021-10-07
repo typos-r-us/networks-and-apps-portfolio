@@ -24,6 +24,7 @@
   <!--  get web goodness-->
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
@@ -37,18 +38,22 @@
 <!--  <script src="js/vendor/modernizr-3.11.2.min.js"></script>-->
 <!--  <script src="js/plugins.js"></script>-->
 <!--  <script src="js/main.js"></script>-->
+<!--  Create a back-to-top button-->
+  <div class="scroll-top-btn">
+    <i class="fas fa-angle-up"></i>
+  </div>
 
   <!--  Create the site navigation Bar-->
   <nav class="navbar">
     <div class="max-width">
       <div class="logo"> <a href="#" >Networks<span>&Apps.</span></a></div>
       <ul class="menu">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#teams">Teams</a></li>
-        <li><a href="#contacts">Contacts</a></li>
+        <li><a href="#home" class="menu-btn">Home</a></li>
+        <li><a href="#about" class="menu-btn">About Me</a></li>
+        <li><a href="#services" class="menu-btn">Services</a></li>
+        <li><a href="#skills" class="menu-btn">Skills</a></li>
+        <li><a href="#teams" class="menu-btn">Teams</a></li>
+        <li><a href="#contacts" class="menu-btn">Contacts</a></li>
       </ul>
       <!--add menu button for collapsed navbar-->
       <div class="menu-btn">
@@ -62,7 +67,7 @@
       <div class="home-content">
         <div class="text-1">Hello, my name is </div>
         <div class="text-2">Kenneth Mwenda </div>
-        <div class="text-3">and I am an experienced<span> Network Engineer</span></div>
+        <div class="text-3">and I am an experienced <span class="typing"></span></div>
         <a href="#">Work With Me</a>
       </div>
     </div>
@@ -76,7 +81,7 @@
           <img src="img/about_section/profile-pic.jpg" alt="Kenneth Mwenda profile picture in black and white.">
         </div>
         <div class="column right">
-          <div class="about-text">I'm Kenneth and I am an experienced<span> Network Engineer</span></div>
+          <div class="about-text">I'm Kenneth and I am an experienced <span class="typing-2"></span></div>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur cupiditate dolor doloremque eum exercitationem laborum libero molestiae quas rem temporibus. Adipisci consequuntur labore nam numquam optio praesentium tempore, voluptatem. Sapiente.</p>
           <a href="#">View and Download CV</a>
         </div>
@@ -329,6 +334,10 @@
       </div>
     </div>
   </section>
+<!--  Create the footer section-->
+  <footer>
+    <span>Created by <a href="#">Kenneth Mwenda</a>|<span class="fa fa-copyright"></span>2021. All Rights Reserved. </span>
+  </footer>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>

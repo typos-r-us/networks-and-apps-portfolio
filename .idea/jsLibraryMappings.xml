@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="JavaScriptLibraryMappings">
-    <file url="PROJECT" libraries="{OwlCarousel2, a076d05399, analytics, jquery-3.6.0, waypoints}" />
+    <file url="PROJECT" libraries="{OwlCarousel2, a076d05399, analytics, jquery-3.6.0, typed.js, waypoints}" />
   </component>
 </project>
