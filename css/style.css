@@ -134,6 +134,17 @@ html {
 section{
   padding: 80px;
 }
+/*all sections font*/
+.about, .services, .skills{
+  font-family: 'Poppins', sans-serif;
+}
+/*all sections content structure*/
+.about .about-content, .services .services-content, .skills .skills-content{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
 section .title{
   position: relative;
   text-align: center;
@@ -167,15 +178,6 @@ section .title::after{
 .about .title::after{
   content: "who I am";
 }
-.about, .services{
-  font-family: 'Poppins', sans-serif;
-}
-.about .about-content, .services .services-content{
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-}
 .about .about-content .left{
   width: 45%;
 }
@@ -201,7 +203,8 @@ section .title::after{
 .about .about-content .right p{
   text-align: justify;
 }
-.about .about-content .right a{
+/*button styling for calls to action in sections*/
+.about .about-content .right a, .skills .skills-content .left a{
   display: inline-block;
   background: crimson;
   color: #fcfcfc;
@@ -213,7 +216,7 @@ section .title::after{
   border: 2px solid crimson;
   transition: color 0.3s ease;
 }
-.about .about-content .right a:hover{
+.about .about-content .right a:hover, .skills .skills-content .left a:hover{
   background: #fcfcfc;
   color: crimson;
 }
@@ -260,6 +263,92 @@ section .title::after{
   font-size: 25px;
   font-weight: 500;
   margin: 10px 0 7px 0;
+}
+/*skills section styling*/
+.skills .title::before {
+  width: 280px;
+}
+.skills .title::after{
+  content: "expertise, mastery";
+}
+.skills .skills-content .column{
+  width: calc(50% - 30px);
+}
+.skills .skills-content .left .skills-text{
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.skills .skills-content .left{
+  text-align: justify;
+}
+.skills .skills-content .right .bars{ /*todo: check this before commit*/
+ margin-bottom: 35px;
+}
+.skills .skills-content .right .info{
+  display: flex;
+  margin-bottom: 2px;
+  margin-top: 8px;
+  align-items: center;
+  justify-content: space-between;
+}
+.skills .skills-content .right span{
+  font-weight: 500;
+  font-size: 18px;
+}
+.skills .skills-content .right .line{
+  height: 5px;
+  width: 100%;
+  background: lightgrey;
+  position: relative;
+}
+.skills .skills-content .right .line::before{
+  content: "";
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: crimson;
+}
+/*set the bars for each category of skill*/
+.skills-content .right .html::before{
+  width: 90%;
+}
+.skills-content .right .css::before{
+  width: 85%;
+}
+.skills-content .right .js::before{
+  width: 80%;
+}
+.skills-content .right .php::before{
+  width: 85%;
+}
+.skills-content .right .sql::before{
+  width: 80%;
+}
+.skills-content .right .wp::before{
+  width: 95%;
+}
+.skills-content .right .kotlin::before{
+  width: 85%;
+}
+.skills-content .right .flutter::before{
+  width: 85%;
+}
+.skills-content .right .nosql::before{
+  width: 95%;
+}
+.skills-content .right .git::before{
+  width: 90%;
+}
+.skills-content .right .networks::before{
+  width: 98%;
+}
+.skills-content .right .infosec::before{
+  width: 75%;
+}
+.skills-content .right .comms::before{
+  width: 95%;
 }
 /*responsive media queries*/
 @media (max-width: 1300px){
@@ -329,7 +418,7 @@ section .title::after{
     max-width: 900px;
   }
   .about .about-content .column{
-    width: 100%;
+    width: calc(100% - 10px); /*width: 100%;*/
   }
   .about .about-content .left{
     display: flex;
@@ -341,6 +430,10 @@ section .title::after{
   }
   .services .services-content .card {
     width: calc(50% - 10px);
+    margin-bottom: 20px;
+  }
+  .skills .skills-content .column{
+    width: calc(100% - 10px);
     margin-bottom: 20px;
   }
 }
